@@ -40,7 +40,6 @@ server <- function(input, output, session){
       system(paste('chmod 777',file.path(appDir,'jobs',jobID,'log.txt')))
       # change directory to jobDIr
       jobDir <- file.path(appDir,'jobs',jobID)
-      print(jobDir)
       setwd(jobDir)
       abundaceFilePath <- file.path(appDir,'uploads',paste(jobID,'abundance.txt',sep = '_'))
       asvFilePath <- file.path(appDir,'uploads',paste(jobID,'seq.fna',sep = '_'))
